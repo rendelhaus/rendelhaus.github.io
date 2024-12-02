@@ -103,7 +103,18 @@ header {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 15px;
-  width: 100%;
+  width: 50%;
+  font-size: 18px;
+}
+.close-ticket {
+  background-color: #ca3911;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 50%;
   font-size: 18px;
 }
 #category-filter {
@@ -141,7 +152,7 @@ header {
   .event-details {
       padding: 10px;
   }
-  .buy-ticket, .purchase-ticket {
+  .buy-ticket, .purchase-ticket, .close-ticket {
       font-size: 14px;
       padding: 10px;
   }
@@ -173,9 +184,33 @@ header {
   .event-details p {
       font-size: 12px;
   }
-  .buy-ticket, .purchase-ticket {
-      font-size: 12px;
-      padding: 8px;
+  .buy-ticket, .purchase-ticket, .close-ticket {
+      font-size: 13px;
+      padding: 9px;
   }
 }
 
+
+
+
+/* Panier flottant */
+#floating-cart-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2ecc71; /* Couleur de fond */
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50px; /* Rond comme celui que tu veux */
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet flottant */
+  z-index: 1000; /* S'assurer qu'il est au-dessus des autres éléments */
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+#floating-cart-button:hover {
+  background-color: #27ae60; /* Couleur au survol */
+  transform: scale(1.1); /* Agrandissement au survol */
+}
