@@ -130,7 +130,7 @@ function generateEventCards(eventsToShow) {
                     <p>Prix: ${event.price}</p>
                 </div>
                 <button class="buy-ticket" onclick="openTicketModal(${index})">
-                    Acheter un Ticket
+                    Réserver un ticket
                 </button>
             </div>
         `;
@@ -192,5 +192,12 @@ function closeTicketModal() {
     document.getElementById('ticket-modal').style.display = 'none';
   }
 
+
+// Panier flottant
+  function openCart() {
+    alert("Panier ouvert ! (fonctionnalité à implémenter)");
+    // Ajoute ici le lien ou la logique pour afficher le panier
+    // Exemple : window.location.href = "/panier";
+}
 
 
