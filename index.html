@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventPass - Billetterie en Ligne</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Le reste du code HTML et JavaScript reste identique au précédent artifact -->
+</head>
+<body>
+    <!-- Contenu identique à l'artifact précédent -->
+</body>
+</html>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tykko</h1>
+            <p>Vivez, vibrez, partagez.</p>
+            <select id="category-filter" onchange="filterEvents()">
+                <option value="all">Tous les événements</option>
+                <option value="Musique">Musique</option>
+                <option value="Sport">Sport</option>
+                <option value="Théâtre">Théâtre</option>
+                <option value="Conférence">Conférence</option>
+                <option value="Festival">Festival</option>
+                <option value="Danse">Danse</option>
+                <option value="Humour">Humour</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="events-grid" id="events-container"></div>
+    </div>
+
+    <div id="ticket-modal">
+        <div class="modal-content">
+            <img id="ticket-image" src="" alt="Event Image">
+            <div id="ticket-info"></div>
+            <div id="qr-code"></div>
+            <button id="purchase-button" class="purchase-ticket">Acheter</button>
+            <button onclick="closeTicketModal()">Fermer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+      
+</body>
+</html>
